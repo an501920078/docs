@@ -249,7 +249,7 @@ defineExpose({
 
 When a parent gets an instance of this component via template refs, the retrieved instance will be of the shape `{ a: number, b: number }` (refs are automatically unwrapped just like on normal instances).
 
-## defineOptions() {#defineoptions}
+## defineOptions()<sup class="vt-badge" data-text="3.3+" /> {#defineoptions}
 
 This macro can be used to declare component options directly inside `<script setup>` without having to use a separate `<script>` block:
 
@@ -348,7 +348,7 @@ In addition, the awaited expression will be automatically compiled in a format t
 `async setup()` must be used in combination with `Suspense`, which is currently still an experimental feature. We plan to finalize and document it in a future release - but if you are curious now, you can refer to its [tests](https://github.com/vuejs/core/blob/main/packages/runtime-core/__tests__/components/Suspense.spec.ts) to see how it works.
 :::
 
-## Generics <sup class="vt-badge ts" /> {#generics}
+## Generics <sup class="vt-badge ts" data-text="3.3+"/> {#generics}
 
 Generic type parameters can be declared using the `generic` attribute on the `<script>` tag:
 
